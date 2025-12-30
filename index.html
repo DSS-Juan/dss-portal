@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DSS Portal</title>
+  <meta name="description" content="DSS Portal — tutorials, documentation, and links for DSS tools." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <!-- Replace logo.png later -->
+      <div class="logo" aria-hidden="true">DSS</div>
+      <div class="brand-text">
+        <h1>DSS Portal</h1>
+        <p>Tools • Tutorials • Documentation</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#tools">Tools</a>
+      <a href="#tutorials">Tutorials</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Everything in one place.</h2>
+        <p>
+          A clean portal for DSS tools, quick links, and step-by-step tutorials.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#tools">Browse tools</a>
+          <a class="btn" href="#tutorials">Watch tutorials</a>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-num" id="toolCount">0</span>
+          <span class="stat-label">Tools</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" id="videoCount">0</span>
+          <span class="stat-label">Tutorials</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">v1</span>
+          <span class="stat-label">Portal</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tools">
+      <div class="section-head">
+        <h3>Tools</h3>
+        <input
+          id="search"
+          class="search"
+          type="search"
+          placeholder="Search a tool (e.g., Sales Report, Labels, Inventory)"
+        />
+      </div>
+
+      <div id="toolGrid"></div>
+    </section>
+
+    <section class="section" id="tutorials">
+      <div class="section-head">
+        <h3>Tutorials</h3>
+        <p class="muted"></p>
+      </div>
+
+      <div class="grid" id="videoGrid"></div>
+    </section>
+  </main>
+
+  <!-- Full-width footer (prevents body gradient mixing) -->
+  <footer class="footer-wrap">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> DSS Portal • Built by Juan D Aguilera</p>
+
+      <div class="footer-links">
+        <a href="#tools">Tools</a>
+        <a href="#tutorials">Tutorials</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

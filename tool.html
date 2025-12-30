@@ -1,0 +1,131 @@
+<!-- tool.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tool • DSS Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">DSS</div>
+      <div class="brand-text">
+        <h1>DSS Portal</h1>
+        <p>Tool Page</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html#tools">Back to Tools</a>
+      <a href="index.html#tutorials">Tutorials</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-card">
+        <h2 id="toolTitle">Tool</h2>
+        <p id="toolDesc" class="muted" style="margin-top:8px;">Description</p>
+
+        <div class="hero-actions">
+          <button class="btn primary" id="copyPathBtn" type="button">Copy path</button>
+          <a class="btn" href="index.html#tools">All tools</a>
+        </div>
+
+        <div class="tags" id="toolTags" style="margin-top:14px;"></div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-num" id="tutorialCount">0</span>
+          <span class="stat-label">Tutorials</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">v1</span>
+          <span class="stat-label">Page</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" id="toolSection">—</span>
+          <span class="stat-label">Section</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PATH -->
+    <section class="section">
+      <div class="section-head">
+        <h3>Tool location</h3>
+        <p class="muted">Copy/paste this path to open the file on the DSS shared drive.</p>
+      </div>
+
+      <div class="card" id="toolPathBox" style="white-space:pre-wrap;"></div>
+    </section>
+
+    <!-- DETAILS GRID -->
+    <section class="section">
+      <div class="section-head">
+        <h3>How to use</h3>
+        <p class="muted">Standard structure: when to use, inputs, steps, outputs, and common issues.</p>
+      </div>
+
+      <div class="detail-grid">
+        <div class="card">
+          <h4>When to use it</h4>
+          <ul class="list" id="toolWhen"></ul>
+        </div>
+
+        <div class="card">
+          <h4>Inputs needed</h4>
+          <ul class="list" id="toolInputs"></ul>
+        </div>
+
+        <div class="card">
+          <h4>Steps</h4>
+          <ol class="list" id="toolSteps"></ol>
+        </div>
+
+        <div class="card">
+          <h4>Outputs</h4>
+          <ul class="list" id="toolOutputs"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ISSUES -->
+    <section class="section">
+      <div class="section-head">
+        <h3>Common issues</h3>
+        <p class="muted">Fast troubleshooting: problem → fix.</p>
+      </div>
+
+      <div class="grid" id="toolIssues"></div>
+    </section>
+
+    <!-- TUTORIALS -->
+    <section class="section" id="toolTutorials">
+      <div class="section-head">
+        <h3>Tutorials for this tool</h3>
+        <p class="muted">You can add multiple videos per tool.</p>
+      </div>
+
+      <div class="grid" id="toolVideoGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer-wrap">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> DSS Portal</p>
+      <div class="footer-links">
+        <a href="index.html#tools">Tools</a>
+        <a href="index.html#tutorials">Tutorials</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="tool.js"></script>
+</body>
+</html>
